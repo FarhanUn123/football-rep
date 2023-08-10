@@ -27,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-ekc#&n6vh4w*_gfcjt3i2ofx3_d#d41xmv4j&d^#v!oybi(qp*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['football-rep-production.up.railway.app', '127.0.0.1']
 
