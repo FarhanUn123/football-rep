@@ -25,7 +25,7 @@ DATABASE_URL= 'postgresql://postgres:Pa9xLauErKR2PXoxwN3c@containers-us-west-87.
 SECRET_KEY = 'u=#gre%c92(v5j&$&cvwd6=0g@t3xjkjz3zeye1y5=ifxjrqi-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['football-rep-production.up.railway.app', '127.0.0.1']
 
