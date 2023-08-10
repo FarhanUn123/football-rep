@@ -18,7 +18,7 @@ import dj_database_url
 # BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DATABASE_URl= "postgresql://postgres:XV9gYsjPq0ew5JyKZrTZ@containers-us-west-159.railway.app:7948/railway"
+# DATABASE_URl= "postgresql://postgres:XV9gYsjPq0ew5JyKZrTZ@containers-us-west-159.railway.app:7948/railway"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -100,9 +100,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'XV9gYsjPq0ew5JyKZrTZ',
-        'HOST': 'containers-us-west-159.railway.app',
-        'PORT': '7948'
+        'PASSWORD': '4Cbnt2ZgDCaLvBg4fSqM',
+        'HOST': 'containers-us-west-204.railway.app',
+        'PORT': '6849'
     }
 }
 
