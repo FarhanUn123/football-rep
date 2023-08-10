@@ -31,6 +31,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['football-rep-production.up.railway.app', '127.0.0.1']
 
+# settings.py
+
+CORS_ALLOWED_ORIGINS = [
+    "https://football-rep-production.up.railway.app",
+    # Add other allowed origins if needed
+]
 
 # Application definition
 
