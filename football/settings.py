@@ -17,6 +17,7 @@ import dj_database_url
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+DATABASE_URL= 'postgresql://postgres:Pa9xLauErKR2PXoxwN3c@containers-us-west-87.railway.app:6450/railway'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -85,10 +86,11 @@ WSGI_APPLICATION = 'football.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'footballdb',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost'
+        'PASSWORD': 'Pa9xLauErKR2PXoxwN3c',
+        'HOST': 'containers-us-west-87.railway.app',
+        'PORT': '6450'
     }
 }
 
