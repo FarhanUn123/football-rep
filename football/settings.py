@@ -25,9 +25,9 @@ DATABASE_URL= 'postgresql://postgres:Pa9xLauErKR2PXoxwN3c@containers-us-west-87.
 SECRET_KEY = 'u=#gre%c92(v5j&$&cvwd6=0g@t3xjkjz3zeye1y5=ifxjrqi-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['football-rep-production.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['*','football-rep-production.up.railway.app', '127.0.0.1']
 
 
 # Application definition
@@ -145,12 +145,3 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-
-# # HTTP Settings:
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
-# SECURE_SSL_REDIRECT = True
-
-# SECURE_HSTS_SECONDS = 31536000 # 1 year
-# SECURE_HSTS_PRELOAD = True
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
