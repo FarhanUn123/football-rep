@@ -27,7 +27,7 @@ SECRET_KEY = 'u=#gre%c92(v5j&$&cvwd6=0g@t3xjkjz3zeye1y5=ifxjrqi-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['football-rep-production.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['football-rep-production.up.railway.app', '127.0.0.1', 'www.football-rep-production.up.railway.app']
 
 
 # Application definition
@@ -146,4 +146,3 @@ STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
-CSRF_COOKIE_SECURE = True
