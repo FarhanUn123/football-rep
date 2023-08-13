@@ -200,16 +200,16 @@
           <div class="col-lg-12" id="rank">
             <div class="widget-next-match">
               <div class="col-12 title-section">
-                <h2 class="heading">Ranking</h2>
+                <h2 class="heading">World Football Club Rankings</h2>
               </div>
               <table class="table custom-table">
                 <thead>
                   <tr>
-                    <th>P</th>
+                    <th>R</th>
                     <th>Team</th>
-                    <th>W</th>
+                    {% comment %} <th>W</th>
                     <th>D</th>
-                    <th>L</th>
+                    <th>L</th> {% endcomment %}
                     <th>PTS</th>
                   </tr>
                 </thead>
@@ -218,9 +218,9 @@
                   <tr>
                     <td>{{i.r}}</td>
                     <td><strong class="text-white">{{i.team}}</strong></td>
-                    <td>{{i.w}}</td>
+                    {% comment %} <td>{{i.w}}</td>
                     <td>{{i.d}}</td>
-                    <td>{{i.l}}</td>
+                    <td>{{i.l}}</td> {% endcomment %}
                     <td>{{i.pts}}</td>
                   </tr>
                   {% endfor %}
