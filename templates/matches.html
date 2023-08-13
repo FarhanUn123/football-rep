@@ -96,13 +96,13 @@
             <span class="score">{{i.h_s}}-{{i.a_s}}</span>
             <div class="team-1 w-50">
               <div class="team-details w-100 text-center">
-                <img src="{{i.h_im.url}}" alt="Image" class="img-fluid">
+                <img src="{{i.h_im}}" alt="Image" class="img-fluid">
                 <h3>{{i.h_t}}</h3>
               </div>
             </div>
             <div class="team-2 w-50">
               <div class="team-details w-100 text-center">
-                <img src="{{i.a_im.url}}" alt="Image" class="img-fluid">
+                <img src="{{i.a_im}}" alt="Image" class="img-fluid">
                 <h3>{{i.a_t}}</h3>
               </div>
             </div>
@@ -128,14 +128,14 @@
                 <div class="widget-vs">
                   <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
                     <div class="team-1 text-center">
-                      <img src="{{nm.first.t1_img.url}}" alt="Image">
+                      <img src="{{nm.first.t1_img}}" alt="Image">
                       <h3>{{nm.first.team1}}</h3>
                     </div>
                     <div>
                       <span class="vs"><span>VS</span></span>
                     </div>
                     <div class="team-2 text-center">
-                      <img src="{{nm.first.t2_img.url}}" alt="Image">
+                      <img src="{{nm.first.t2_img}}" alt="Image">
                       <h3>{{nm.first.team2}}</h3>
                     </div>
                   </div>
@@ -167,14 +167,14 @@
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="{{i.t1_img.url}}" alt="Image">
+                        <img src="{{i.t1_img}}" alt="Image">
                         <h3>{{i.team1}}</h3>
                       </div>
                       <div>
                         <span class="vs"><span>VS</span></span>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="{{i.t2_img.url}}" alt="Image">
+                        <img src="{{i.t2_img}}" alt="Image">
                         <h3>{{i.team2}}</h3>
                       </div>
                     </div>
@@ -219,7 +219,7 @@
           {% for i in vo %}
           <div class="item">
             <div class="video-media">
-              <img src="{{i.image.url}}" alt="Image" class="img-fluid">
+              <img src="{{i.image}}" alt="Image" class="img-fluid">
               <a href="{{i.link}}" class="d-flex play-button align-items-center" data-fancybox>
                 <span class="icon mr-3">
                   <span class="icon-play"></span>
