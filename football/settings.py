@@ -93,6 +93,15 @@ DATABASES = {
         'PORT': '6450'
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'footballdb',
+#         'USER': 'postgres',
+#         'PASSWORD': '1234',
+#         'HOST': 'localhost',
+#     }
+# }
 
 
 # Password validation

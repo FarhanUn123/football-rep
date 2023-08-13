@@ -47,7 +47,8 @@ class Score(models.Model):
     a_im=models.ImageField(upload_to='pics')
 
 class Event(models.Model):
-    image=models.ImageField(upload_to='pics')
+    # image=models.ImageField(upload_to='pics')
+    image=models.URLField(max_length=1000)
     head=models.CharField(max_length=50)
     text=models.TextField()
     count=models.DateField()
