@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.views.decorators.csrf import csrf_exempt
 from .models import Lat_news, Nex_match, Ranking, Video, Blog, Score, Event, Comment, Video2, Comment2, Blog2
 
 def index(request):
@@ -28,6 +29,7 @@ def blog(request):
 
     return render(request, 'blog.html', {'bg':bg})
 
+@csrf_exempt
 def contact(request):
     if request.method=='POST':
         name=request.POST.get('name')
@@ -39,7 +41,7 @@ def contact(request):
         return redirect('contact')
     return render(request, 'contact.html')
     
-
+@csrf_exempt
 def single(request):
     if request.method=='POST':
         name=request.POST.get('name')
