@@ -28,6 +28,8 @@ urlpatterns = [
     path('blog/', views.blog, name='blog'),
     path('contact/', views.contact, name='contact'),
     path('single/', views.single, name='single'),
+    path('register/', views.register, name='register'),
+    path('login/', views.login, name='login'),
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

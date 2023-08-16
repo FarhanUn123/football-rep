@@ -56,3 +56,9 @@ def single(request):
     bg2=Blog2.objects.all()
     ct2=Comment.objects.all()
     return render(request, 'single.html',{'ln':ln, 'bg':bg, 'ct2':ct2, 'bg2':bg2})
+
+def register(request):
+    return render(request, 'register.html')
+
+def login(request):
+    return render(request, 'login.html')
