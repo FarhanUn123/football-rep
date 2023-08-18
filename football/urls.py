@@ -19,17 +19,19 @@ from django.urls import path
 from app import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-    path('matches/', views.matches, name='matches'),
-    path('players/', views.players, name='players'),
-    path('blog/', views.blog, name='blog'),
+    path('', login_required(views.index), name='index'),
+    path('matches/', login_required(views.matches), name='matches'),
+    path('players/', login_required(views.players), name='players'),
+    path('blog/', login_required(views.blog), name='blog'),
     path('contact/', views.contact, name='contact'),
-    path('single/', views.single, name='single'),
+    path('single/', login_required(views.single), name='single'),
     path('register/', views.register, name='register'),
     path('login/', views.login, name='login'),
+    path('logout/', views.logout, name='logout'),
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
