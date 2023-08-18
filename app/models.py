@@ -3,7 +3,7 @@ from django.db import models
 class Lat_news(models.Model):
     image1=models.URLField(max_length=1000)
     image2=models.URLField(max_length=1000)
-    caption=models.CharField(max_length=50)
+    caption=models.CharField(max_length=100)
     text1=models.CharField(max_length=50)
     text2=models.CharField(max_length=50)
     link=models.URLField(max_length=200)
@@ -28,13 +28,13 @@ class Ranking(models.Model):
 
 class Video(models.Model):
     image=models.URLField(max_length=1000)
-    caption=models.CharField(max_length=50)
+    caption=models.CharField(max_length=100)
     link=models.URLField(max_length=200)
 
 class Blog(models.Model):
     image=models.URLField(max_length=1000)
     date=models.DateField()
-    caption=models.CharField(max_length=50)
+    caption=models.CharField(max_length=100)
     text=models.TextField()
     link=models.URLField(max_length=200)
 
@@ -60,7 +60,7 @@ class Comment(models.Model):
 
 class Video2(models.Model):
     image=models.URLField(max_length=1000)
-    name=models.CharField(max_length=50)
+    name=models.CharField(max_length=100)
     num=models.IntegerField()
     pos=models.CharField(max_length=50)
     link=models.URLField(max_length=200)
@@ -72,7 +72,7 @@ class Comment2(models.Model):
     message=models.TextField()
 
 class Blog2(models.Model):
-    caption=models.CharField(max_length=50)
+    caption=models.CharField(max_length=100)
     image1=models.ImageField(upload_to='pics',)
     date=models.DateField()
     text=models.TextField()
