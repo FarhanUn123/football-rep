@@ -63,8 +63,6 @@ def single(request):
 def register(request):
     if request.method == 'POST':
         username = request.POST['name']
-        phone = request.POST['phone']
-        address = request.POST['address']
         email = request.POST['email']
         password = request.POST['password']
         
@@ -75,7 +73,7 @@ def register(request):
             messages.info(request,'Email Taken')
             return redirect('register')
         else:   
-            user = User.objects.create_user(username=username, phone=phone, address=address, email=email, password=password)
+            user = User.objects.create_user(username=username, email=email, password=password)
             user.save()
             print('User Created')
             return redirect('login')
