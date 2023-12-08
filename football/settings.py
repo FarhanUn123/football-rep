@@ -17,7 +17,7 @@ import dj_database_url
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATABASE_URL= 'postgresql://postgres:fDcE3AaG4G-1c-B64E4dBdg641eCcd--@monorail.proxy.rlwy.net:44577/railway'
+DATABASE_URL= 'postgresql://postgres:ebe6ccaGGdE1fe3564gaAg5gdd4523BE@viaduct.proxy.rlwy.net:22114/railway'
 # DATABASE_URL= 'postgresql://postgres:Pa9xLauErKR2PXoxwN3c@containers-us-west-87.railway.app:6450/railway'
 
 # Quick-start development settings - unsuitable for production
@@ -88,9 +88,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'fDcE3AaG4G-1c-B64E4dBdg641eCcd--',
-        'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '44577'
+        'PASSWORD': 'ebe6ccaGGdE1fe3564gaAg5gdd4523BE',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '22114'
     }
 }
 
