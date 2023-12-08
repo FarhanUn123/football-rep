@@ -17,7 +17,9 @@ import dj_database_url
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATABASE_URL= 'postgresql://postgres:Pa9xLauErKR2PXoxwN3c@containers-us-west-87.railway.app:6450/railway'
+DATABASE_URL= 'postgresql://postgres:fDcE3AaG4G-1c-B64E4dBdg641eCcd--@monorail.proxy.rlwy.net:44577/railway'
+# DATABASE_URL= 'postgresql://postgres:Pa9xLauErKR2PXoxwN3c@containers-us-west-87.railway.app:6450/railway'
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -81,17 +83,27 @@ WSGI_APPLICATION = 'football.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'Pa9xLauErKR2PXoxwN3c',
-        'HOST': 'containers-us-west-87.railway.app',
-        'PORT': '6450'
+        'PASSWORD': 'fDcE3AaG4G-1c-B64E4dBdg641eCcd--',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '44577'
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Pa9xLauErKR2PXoxwN3c',
+#         'HOST': 'containers-us-west-87.railway.app',
+#         'PORT': '6450'
+#     }
+# }
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
